@@ -1,0 +1,9 @@
+server:
+  dev:
+    enabled: true
+
+# Включаем NodePort для внешнего доступа
+ui:
+  enabled: true
+  serviceType: "NodePort"
+  nodePort: 32200 # Фиксируем порт, чтобы не угадывать его каждый раз
